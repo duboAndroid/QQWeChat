@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">QQWeChat</string>
+
+    <string name="NetworkNotConnErrorStr">网络未连接!请求取消</string>
+    <string name="NetworkRequestErrorCode">网络请求错误,错误码:</string>
+    <string name="NetworkRequestExceptionStr">网络请求异常,异常原因:</string>
+    <string name="NetworkConnTimeoutStr">网络过慢,数据加载超时</string>
+    <string name="NetworkResultDataEmptyStr">网络返回数据为空</string>
+    <string name="NetworkJsonFormatErrorStr">返回Json格式错误</string>
+    <string name="NetworkLoadDataErrorStr">数据加载失败,请重试!</string>
+    <string name="notFindThisSport">很抱歉,没有找到此球场</string>
+    <string name="notFindBanner">很抱歉,没有轮播图</string>
+    <string name="SystemExceptionExitStr">很抱歉,耽误您的使用,请重新打开!</string>
+    <string name="UiInitializeExceptionStr">界面初始化错误,请重新打开初始化!</string>
+    <string name="SearchNoInputContentStr">搜索内容为空,请输入搜索内容!</string>
+    <string name="PageContentLoadFinishStr">数据已经全部加载完了哦!</string>
+
+    <string name="verify_code_text">获取</string>
+    <string name="NeedReLoginHintStr">登录状态过期,请重新登录!</string>
+    <string name="PictureSelectProblem">选择设置图片失败,请重试!</string>
+    <string name="PictureCutProblem">选择设置图片裁剪失败,请重试!</string>
+</resources>

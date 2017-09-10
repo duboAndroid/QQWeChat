@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.1"
+    useLibrary 'org.apache.http.legacy'//调用 网络用的
+    defaultConfig {
+        applicationId "com.example.dubo.qqwechat"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    /* compile files('libs/weibosdkcore_release.jar')
+                compile files('libs/libammsdk_new.jar')*/
+    //QQ
+    compile files('libs/open_sdk_r5793_lite.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    //微信
+    compile files('libs/wechat-sdk-android-with-mta.jar')
+    //微博
+    compile files('libs/weiboSDKCore_3.1.4.jar')
+    //compile 'com.sina.weibo.sdk:core:4.1.0'
+}
